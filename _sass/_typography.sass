@@ -1,0 +1,84 @@
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  font-family: $body_font_stack
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+  font-size: inherit
+
+body
+  min-height: 740px
+
+h1, h2, h3, h4, h5, h6
+  font-family: $header_font_stack
+
+h1
+  font-size: 4em
+  margin-bottom: 40px
+
+h2
+  font-size: 3em
+  margin-bottom: 30px
+
+h3
+  font-size: 2em
+  margin-bottom: 20px
+
+h4
+  font-size: 1.5em
+  margin-bottom: 10px
+
+h5
+  font-size: 1.2em
+  margin-bottom: 10px
+
+h6
+  font-size: 1.1em
+  margin-bottom: 10px
+
+
+
+code, tt, var
+  font-family: $mono_font_stack
+  font-size: inherit
+
+b, strong
+  color: $strong_color
+  font-weight: $strong_weight
+  font-style: $strong_style
+
+i, em
+  color: $emphasis_color
+  font-weight: $emphasis_weight
+  font-style: $emphasis_style
+
+a
+  color: $link_fg
+  background: $link_bg
+  text-decoration: none
+  padding: 0 0.1em
+  border-radius: 0.2em
+
+  -webkit-transition: 0.5s
+  -moz-transition: 0.5s
+  -ms-transition: 0.5s
+  -o-transition: 0.5s
+  transition: 0.5s
+
+  &:hover,
+  &:focus
+    color: lighten($link_fg, 30)

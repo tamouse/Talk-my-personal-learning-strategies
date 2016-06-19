@@ -1,0 +1,36 @@
+=translate($x, $y)
+  -webkit-transform: translate($x, $y)
+  -moz-transform: translate($x, $y)
+  -ms-transform: translate($x, $y)
+  -o-transform: translate($x, $y)
+  transform: translate($x, $y)
+
+=translateX($z)
+  -webkit-transform: translateX($z)
+  -moz-transform:    translateX($z)
+  -ms-transform:     translateX($z)
+  -o-transform:      translateX($z)
+  transform:         translateX($z)
+
+=translateY($z)
+  -webkit-transform: translateY($z)
+  -moz-transform:    translateY($z)
+  -ms-transform:     translateY($z)
+  -o-transform:      translateY($z)
+  transform:         translateY($z)
+
+=translateZ($z)
+  -webkit-transform: translateZ($z)
+  -moz-transform:    translateZ($z)
+  -ms-transform:     translateZ($z)
+  -o-transform:      translateZ($z)
+  transform:         translateZ($z)
+
+
+/* make some useful styles for individual slides
+
+.translate-20
+  +translate(20px,20px)
+
+.translateZ-20
+  +translateZ(20px)

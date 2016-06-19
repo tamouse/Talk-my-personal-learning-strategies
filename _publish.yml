@@ -1,0 +1,3 @@
+## Overrides to use when publishing the site
+baseurl: "/jekyll-impress.js-starter-kit"
+url: "https://tamouse.github.io"
