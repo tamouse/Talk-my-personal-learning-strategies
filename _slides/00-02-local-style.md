@@ -2,7 +2,9 @@
 layout: step
 slug: local-style
 data:
-  y: 6000
+  x: 0
+  y: -2000
+  scale: 3
 
 ---
 
@@ -14,7 +16,7 @@ color: midnightblue;
 }
 </style>
 
-# this should be blue
+# Impress.JS
 
-* and you think it will be?
-* yes I do!
+is a **presentation tool** inspired by
+[prezi](http://prezi.com)

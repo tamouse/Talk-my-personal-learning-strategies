@@ -1,14 +1,17 @@
 ---
-layout: step
+layout: slide
 slug: slide-down
-classes: [slide]
+classes: [text-center]
 
 data:
-  y: 3000
+  x: 0
+  y: 2000
   scale: 3
 
 ---
 
-## this is below
+### Jekyll
 
-(yes it is)
+A blog-aware static site generator...
+
+That can do **so** much more!

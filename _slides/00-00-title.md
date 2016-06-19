@@ -5,7 +5,7 @@ slug: "title"
 data:
   x: 0
   y: 0
-  scale: 4
+  scale: 2
   rotate: 0
 
 ---

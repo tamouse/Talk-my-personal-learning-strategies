@@ -9,17 +9,25 @@
 #   z: 0
 #   scale: 1
 #   rotate: 0
+#   rotate_x: 0
+#   rotate_y: 0
+#   rotate_z: 0
+
 ---
 
 <div
    {% if page.slug %}id="{{page.slug}}"{% endif %}
-   class="step {% if page.classes %}{{page.classes | join: " "}}{% endif %}"
+   class="step {% if layout.classes %}{{layout.classes | join: " "}}{% endif %} {% if page.classes %}{{page.classes | join: " "}}{% endif %}"
    {% if page.tooltip %}title="{{page.tooltip}}"{% endif %}
-   {% if page.data.x %}data-x="{{page.data.x}}"{% else %}data-x="0"{% endif %}
-   {% if page.data.y %}data-y="{{page.data.y}}"{% else %}data-y="0"{% endif %}
-   {% if page.data.z %}data-z="{{page.data.z}}"{% else %}data-z="0"{% endif %}
+   {% if page.data.x %}data-x="{{page.data.x}}"{% endif %}
+   {% if page.data.y %}data-y="{{page.data.y}}"{% endif %}
+   {% if page.data.z %}data-z="{{page.data.z}}"{% endif %}
    {% if page.data.scale %}data-scale="{{page.data.scale}}"{% else %}data-scale="1"{% endif %}
-   {% if page.data.rotate %}data-rotate="{{page.data.rotate}}"{% else %}data-rotate="0"{% endif %}
+   {% if page.data.rotate %}data-rotate="{{page.data.rotate}}"{% else %}
+     {% if page.data.rotate_x %}data-rotate-x="{{page.data.rotate_x}}"{% endif %}
+     {% if page.data.rotate_y %}data-rotate-y="{{page.data.rotate_y}}"{% endif %}
+     {% if page.data.rotate_z %}data-rotate-z="{{page.data.rotate_z}}"{% endif %}
+   {% endif %}
    >
   {{content}}
 </div>
