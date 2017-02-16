@@ -1,6 +1,25 @@
 ---
-layout: default
 ---
-{% for slide in site.slides %}
-{{ slide.output }}
-{% endfor %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Talk</title>
+    <meta name="viewport" content="width=device-width,
+				   initial-scale=1">
+    <style media="screen">
+      body { max-width: 50%; margin: auto; font-size: 2em;
+      background: papayawhip; color: #337;}
+    </style>
+  </head>
+  <body>
+    <h2>{{site.data.presentation.title}}</h1>
+    <h4>{{site.data.presentation.description}}</h2>
+    <ul>
+      <li>{{site.data.presentation.author.name}}</li>
+      <li>Twitter: @{{site.data.presentation.author.twitter}}</li>
+      <li>github.com/{{site.data.presentation.author.github}}</li>
+    </ul>
+    <p style="text-align: center;"><a href="slideshow.html">Slideshow</a></p>
+  </body>
+</html>
