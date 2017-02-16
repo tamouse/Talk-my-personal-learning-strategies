@@ -1,3 +1,4 @@
 ## Overrides to use when publishing the site
-baseurl: "/jekyll-impress.js-starter-kit"
+baseurl: "/Talk-my-personal-learning-strategies"
 url: "https://tamouse.github.io"
+destination: docs/

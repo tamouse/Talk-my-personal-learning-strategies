@@ -1,7 +1,7 @@
 collections:
   - slides
 
-# Over-ridden for publish with `_config_publish.yml`
+# Over-ridden for publish with `_publish.yml`
 baseurl: ""
 url: ""
 
@@ -14,3 +14,4 @@ kramdown:
 
 exclude:
   - README.md
+  - docs
