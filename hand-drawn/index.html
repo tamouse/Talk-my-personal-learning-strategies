@@ -1,29 +1,7 @@
 ---
+layout: slideshow
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,
-				   initial-scale=1">
-    <title>my personal learning strategies</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/lib/js/classList.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/lib/js/head.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css" media="screen" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/night.min.css" media="screen" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-	{% for i in (0..29) %}
-	<section><img src="images/page-{{i}}.jpg" style="min-width:
-	100%; min-height: 100%" ></section>
-	{% endfor %}
-      </div>
-    </div>
-    <script>
-      Reveal.initialize({slideNumber: true, history: true});
-    </script>
-  </body>
-</html>
+
+{% for slide in site.slides %}
+{{slide.output}}
+{% endfor %}
